@@ -27,6 +27,6 @@ if (averageScoreDolphins > averageScoreKoalas && averageScoreDolphins >= 100) {
   averageScoreKoalas >= 100
 ) {
   console.log("Both win the trophy");
-} else if (averageScoreDolphins === averageScoreKoalas) {
+} else {
   console.log("No one win the trophy");
 }
