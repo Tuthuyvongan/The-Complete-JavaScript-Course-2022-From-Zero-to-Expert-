@@ -10,7 +10,7 @@
 // } else if (averageScoreDolphins === averageScoreKoalas) {
 //   console.log("2 team draw");
 // }
-//Test Data Bonus 1
+//Test Data Bonus 1 + 2
 const averageScoreDolphins = (97 + 112 + 101) / 3;
 const averageScoreKoalas = (109 + 95 + 106) / 3;
 console.log(averageScoreDolphins, averageScoreKoalas);
