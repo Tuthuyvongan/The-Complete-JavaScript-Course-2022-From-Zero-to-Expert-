@@ -1,6 +1,10 @@
+////////////////////////////////////
+// Linking a JavaScript File
 // let js = "amazing";
-
 // console.log(40 + 8 + 23 - 10);
+
+////////////////////////////////////
+// Values and Variables
 // console.log("Jonas");
 // console.log(23);
 
@@ -23,6 +27,8 @@
 // let job2 = "Teacher";
 // console.log(myFirstJob);
 
+////////////////////////////////////
+// Data Types
 // let javascriptIsFun = true;
 // console.log(javascriptIsFun);
 // // console.log(typeof true);
@@ -33,9 +39,25 @@
 // let year;
 // console.log(typeof javascriptIsFun);
 // console.log(year);
-// console.log(typeof year);
-// console.log(typeof year);
 // year = 1991;
+// console.log(typeof year);
+// console.log(typeof null);
+
+////////////////////////////////////
+// let, const and var
+// let age = 30;
+// age = 31;
+// const birthYear = 1991;
+// // birthYear = 1990;
+// // const job;
+// var job = 'programmer';
+// job = 'teacher'
+// lastName = 'Schmedtmann';
+// console.log(lastName);
+
+////////////////////////////////////
+// Basic Operators
+// Math operators
 // const now = 2037;
 // const ageJonas = now - 1991;
 // const ageSarah = now - 2018;
@@ -62,6 +84,8 @@
 // const averageAge = (ageJonas + ageSarah) / 2;
 // console.log(ageJonas, ageSarah, averageAge);
 
+////////////////////////////////////
+// Strings and Template Literals
 // const firstName = "Thu";
 // const job = "Software engineer";
 // const birthYear = 1999;
@@ -77,8 +101,9 @@
 // years old ${job}!`;
 // console.log(thuNew1);
 
+////////////////////////////////////
+// Taking Decisions: if / else Statements
 // const age = 23;
-
 // if (age >= 18) {
 //   console.log("Thu can start driving license");
 // } else {
@@ -93,6 +118,9 @@
 //   century = 21;
 // }
 // console.log(century);
+
+////////////////////////////////////
+// Type Conversion and Coercion
 //type conversation
 // const inputYear = 1991;
 // console.log(Number(inputYear), inputYear);
@@ -111,24 +139,74 @@
 // n = n - 1;
 // console.log(n);
 
+////////////////////////////////////
+// Truthy and Falsy Values
 // 5 falsy values: 0, '', undefined, null, NaN
-console.log(Boolean(0));
-console.log(Boolean(""));
-console.log(Boolean(undefined));
-console.log(Boolean(null));
-console.log(Boolean(NaN));
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean(undefined));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
 
-const money = 0;
-// if chỉ thực thi khi true
-if (money) {
-  console.log("Don't spend it all");
-} else {
-  console.log("You shound get a job!");
-}
+// const money = 0;
+// // if chỉ thực thi khi true
+// if (money) {
+//   console.log("Don't spend it all");
+// } else {
+//   console.log("You shound get a job!");
+// }
 
-let height = 0;
-if (height) {
-  console.log("Yay! Height is defined");
-} else {
-  console.log("Height is undefined");
-}
+// let height = 0;
+// if (height) {
+//   console.log("Yay! Height is defined");
+// } else {
+//   console.log("Height is undefined");
+// }
+
+////////////////////////////////////
+// Equality Operators: == vs. ===
+// const age = "18";
+// if (age === 18) console.log("You just became an adult :D (strict)");
+// if (age == 18) console.log("You just became an adult :D (loose)");
+// const favourite = Number(prompt("What's your favourite number?"));
+// console.log(favourite);
+// console.log(typeof favourite);
+// if (favourite === 23) {
+//   // 22 === 23 -> FALSE
+//   console.log("Cool! 23 is an amzaing number!");
+// } else if (favourite === 7) {
+//   console.log("7 is also a cool number");
+// } else if (favourite === 9) {
+//   console.log("9 is also a cool number");
+// } else {
+//   console.log("Number is not 23 or 7 or 9");
+// }
+// if (favourite !== 23) console.log("Why not 23?");
+
+////////////////////////////////////
+// Logical Operators
+// const hasDriveLicense = true;
+// const hasGoodVision = true;
+// console.log(hasDriveLicense && hasGoodVision);
+// console.log(hasDriveLicense || hasGoodVision);
+// console.log(!hasDriveLicense);
+
+// // const shouldDrive = hasDriveLicense && hasGoodVision;
+
+// // if (shouldDrive) {
+// //   console.log("Sarah is able to drive!");
+// // } else {
+// //   console.log("Someone else should drive...");
+// // }
+
+// const isTired = false;
+
+// console.log(hasDriveLicense && hasGoodVision && isTired);
+
+// const shouldDrive = hasDriveLicense && hasGoodVision && !isTired;
+
+// if (shouldDrive) {
+//   console.log("Sarah is able to drive!");
+// } else {
+//   console.log("Someone else should drive...");
+// }
