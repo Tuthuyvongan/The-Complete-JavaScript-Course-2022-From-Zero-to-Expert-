@@ -183,3 +183,43 @@
 // if (friends.includes("Steven")) {
 //   console.log("You have a friend called Steven");
 // }
+
+////////////////////////////////////
+// Objects
+// const thu = {
+//   firstName: "Thu",
+//   lastName: "Bui",
+//   age: 2023 - 1999,
+//   job: "student",
+//   friends: ["A", "B", "C"],
+// };
+// console.log(thu);
+// console.log(thu.lastName);
+// console.log(thu["lastName"]);
+
+// const nameKey = "Name";
+// console.log(thu["first" + nameKey]);
+// console.log(thu["last" + nameKey]);
+
+// // const interestedIn = prompt(
+// //   "What do you want to know about me? Choose between firstName, lastName, age, job and friends"
+// // );
+// // if (thu[interestedIn]) {
+// //   console.log(thu[interestedIn]);
+// // } else {
+// //   console.log("Wrong request");
+// // }
+
+// thu.location = "Quang Ngai";
+// thu["twitter"] = "@leonceWang";
+// console.log(thu);
+
+// //Challenge
+// // Jonas has 3 friends and his best friend is called Michael
+// const jonas = {
+//   firstName: "Jonas",
+//   friends: ["Michael", "Peter", "Steven"],
+// };
+// console.log(
+//   `${jonas.firstName} has ${jonas.friends.length} friends and his best friend is called ${jonas.friends[0]}`
+// );
