@@ -223,3 +223,39 @@
 // console.log(
 //   `${jonas.firstName} has ${jonas.friends.length} friends and his best friend is called ${jonas.friends[0]}`
 // );
+
+////////////////////////////////////
+// Object Methods
+const thu = {
+  firstName: "Thu",
+  lastName: "Bui",
+  birthYear: 1999,
+  job: "student",
+  friends: ["A", "B", "C"],
+  hasDiversLicense: true,
+  //   calcAge: function (birthYear) {
+  //     return 2023 - birthYear;
+  //   },
+  //   calcAge: function () {
+  //     console.log(this);
+  //     return 2023 - this.birthYear;
+  //   },
+  calcAge: function () {
+    this.age = 2023 - this.birthYear;
+    return this.age;
+  },
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} student and she has ${
+      this.hasDiversLicense ? "a" : "no"
+    } driver's license`;
+  },
+};
+console.log(thu.calcAge());
+console.log(thu.age);
+console.log(thu.age);
+console.log(thu.age);
+// console.log(thu["calcAge"](1999));
+
+// Challenge
+// Thu is a 24 year old student and she has a driver's license
+console.log(thu.getSummary());
