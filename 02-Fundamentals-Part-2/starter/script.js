@@ -226,36 +226,74 @@
 
 ////////////////////////////////////
 // Object Methods
-const thu = {
-  firstName: "Thu",
-  lastName: "Bui",
-  birthYear: 1999,
-  job: "student",
-  friends: ["A", "B", "C"],
-  hasDiversLicense: true,
-  //   calcAge: function (birthYear) {
-  //     return 2023 - birthYear;
-  //   },
-  //   calcAge: function () {
-  //     console.log(this);
-  //     return 2023 - this.birthYear;
-  //   },
-  calcAge: function () {
-    this.age = 2023 - this.birthYear;
-    return this.age;
-  },
-  getSummary: function () {
-    return `${this.firstName} is a ${this.calcAge()} student and she has ${
-      this.hasDiversLicense ? "a" : "no"
-    } driver's license`;
-  },
-};
-console.log(thu.calcAge());
-console.log(thu.age);
-console.log(thu.age);
-console.log(thu.age);
-// console.log(thu["calcAge"](1999));
+// const thu = {
+//   firstName: "Thu",
+//   lastName: "Bui",
+//   birthYear: 1999,
+//   job: "student",
+//   friends: ["A", "B", "C"],
+//   hasDiversLicense: true,
+//   //   calcAge: function (birthYear) {
+//   //     return 2023 - birthYear;
+//   //   },
+//   //   calcAge: function () {
+//   //     console.log(this);
+//   //     return 2023 - this.birthYear;
+//   //   },
+//   calcAge: function () {
+//     this.age = 2023 - this.birthYear;
+//     return this.age;
+//   },
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()} student and she has ${
+//       this.hasDiversLicense ? "a" : "no"
+//     } driver's license`;
+//   },
+// };
+// console.log(thu.calcAge());
+// console.log(thu.age);
+// console.log(thu.age);
+// console.log(thu.age);
+// // console.log(thu["calcAge"](1999));
 
-// Challenge
-// Thu is a 24 year old student and she has a driver's license
-console.log(thu.getSummary());
+// // Challenge
+// // Thu is a 24 year old student and she has a driver's license
+// console.log(thu.getSummary());
+
+////////////////////////////////////
+// The for Loop
+// for (let rep = 1; rep <= 30; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️`);
+// }
+const types = [];
+const thu = ["Thu", "Bui", 2023 - 1999, "student", ["A", "B", "C"], true];
+for (let i = 0; i < thu.length; i++) {
+  console.log(thu[i], typeof thu[i]);
+
+  // Filling types array
+  // types[i] = typeof thu[i];
+  types.push(typeof thu[i]);
+}
+console.log(types);
+
+const years = [1991, 2007, 1971, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  // ages[i] = 2023 - years[i];
+  ages.push(2023 - years[i]);
+}
+console.log(ages);
+
+// Breaking and Continuing
+console.log("--- ONLY STRING ---");
+for (let i = 0; i < thu.length; i++) {
+  if (typeof thu[i] !== "string") continue;
+  console.log(thu[i], typeof thu[i]);
+}
+
+console.log("--- BREAK WITH NUMBER ---");
+for (let i = 0; i < thu.length; i++) {
+  if (typeof thu[i] === "number") break;
+  console.log(thu[i], typeof thu[i]);
+}
